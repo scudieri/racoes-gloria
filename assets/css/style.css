@@ -159,25 +159,17 @@ button { font-family:inherit; cursor:pointer; }
   flex-shrink:0;
 }
 .logo { display:inline-flex; align-items:center; gap:10px; }
-.logo-text { font-size:1.2rem; font-weight:700; color:#fff; letter-spacing:-.3px; transition:color var(--t) var(--ease); }
-.logo-text strong { color:rgba(255,255,255,.75); transition:color var(--t) var(--ease); }
-
-/* Logo escuro quando header sólido */
-.header.scrolled .logo-text { color:var(--g-dark); }
-.header.scrolled .logo-text strong { color:var(--g-mid); }
+.logo-text { font-size:1.2rem; font-weight:700; color:var(--g-dark); letter-spacing:-.3px; }
+.logo-text strong { color:var(--g-mid); }
 
 /* ── Header ─────────────────────────────────────────────────────────── */
 .header {
   position:fixed; top:0; left:0; right:0; z-index:200;
-  transition:background var(--t) var(--ease), box-shadow var(--t) var(--ease), padding var(--t) var(--ease);
-  padding-block:0;
-}
-.header.scrolled {
   background:rgba(255,255,255,.97);
   backdrop-filter:blur(16px);
   box-shadow:0 2px 20px rgba(0,0,0,.08);
+  padding-block:0;
 }
-.header.hero-top { background:transparent; }
 
 .header__inner {
   display:flex;
@@ -192,14 +184,11 @@ button { font-family:inherit; cursor:pointer; }
   border-radius:7px;
   font-size:.88rem;
   font-weight:500;
-  color:rgba(255,255,255,.85);
+  color:var(--text-muted);
   transition:all var(--t) var(--ease);
 }
-.header.scrolled .nav__link { color:var(--text-muted); }
 .nav__link:hover,
-.nav__link--active { background:rgba(255,255,255,.15); color:#fff; }
-.header.scrolled .nav__link:hover,
-.header.scrolled .nav__link--active { background:var(--gray-light); color:var(--g-mid); }
+.nav__link--active { background:var(--gray-light); color:var(--g-mid); }
 
 .hamburger {
   display:none;
@@ -213,11 +202,10 @@ button { font-family:inherit; cursor:pointer; }
 .hamburger span {
   display:block;
   width:22px; height:2px;
-  background:#fff;
+  background:var(--g-dark);
   border-radius:2px;
   transition:all var(--t) var(--ease);
 }
-.header.scrolled .hamburger span { background:var(--g-dark); }
 .hamburger.open span:nth-child(1) { transform:translateY(7px) rotate(45deg); }
 .hamburger.open span:nth-child(2) { opacity:0; }
 .hamburger.open span:nth-child(3) { transform:translateY(-7px) rotate(-45deg); }
