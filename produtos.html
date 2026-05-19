@@ -11,20 +11,24 @@
 <body>
 
   <!-- ══ HEADER ══════════════════════════════════════════════════════════ -->
-  <header class="header">
+  <header class="header scrolled" id="header">
     <div class="container header__inner">
       <a href="index.html" class="logo">
         <span class="logo-text">Rações<strong>Glória</strong></span>
       </a>
-      <nav class="nav">
+      <nav class="nav" id="nav">
         <a href="index.html" class="nav__link">Início</a>
         <a href="produtos.html" class="nav__link nav__link--active">Produtos</a>
         <a href="index.html#linhas" class="nav__link">Linhas</a>
         <a href="index.html#sobre" class="nav__link">Sobre</a>
         <a href="index.html#contato" class="nav__link">Contato</a>
       </nav>
-      <a href="https://wa.me/5500000000000" class="btn btn--primary">Fazer pedido</a>
-      <button class="hamburger" aria-label="Menu">&#9776;</button>
+      <div class="header__cta">
+        <a href="https://wa.me/5500000000000" class="btn btn--primary">Fazer pedido</a>
+      </div>
+      <button class="hamburger" id="hamburger" aria-label="Menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
     </div>
   </header>
 
