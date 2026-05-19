@@ -1,0 +1,576 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Produtos – Rações Glória</title>
+  <link rel="stylesheet" href="assets/css/style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- ══ HEADER ══════════════════════════════════════════════════════════ -->
+  <header class="header">
+    <div class="container header__inner">
+      <a href="index.html" class="logo">
+        <span class="logo-text">Rações<strong>Glória</strong></span>
+      </a>
+      <nav class="nav">
+        <a href="index.html" class="nav__link">Início</a>
+        <a href="produtos.html" class="nav__link nav__link--active">Produtos</a>
+        <a href="index.html#linhas" class="nav__link">Linhas</a>
+        <a href="index.html#sobre" class="nav__link">Sobre</a>
+        <a href="index.html#contato" class="nav__link">Contato</a>
+      </nav>
+      <a href="https://wa.me/5500000000000" class="btn btn--primary">Fazer pedido</a>
+      <button class="hamburger" aria-label="Menu">&#9776;</button>
+    </div>
+  </header>
+
+  <!-- ══ PAGE HEADER ═══════════════════════════════════════════════════════ -->
+  <div class="page-header">
+    <div class="container">
+      <h1 class="page-header__title">Todos os produtos</h1>
+      <p class="page-header__sub">38 produtos em 3 linhas especializadas. Encontre a ração ideal para o seu animal.</p>
+    </div>
+  </div>
+
+  <!-- ══ FILTROS + GRID ════════════════════════════════════════════════════ -->
+  <section class="products-page">
+    <div class="container products-page__inner">
+
+      <!-- Sidebar filtros -->
+      <aside class="filters">
+        <h3 class="filters__title">Filtrar</h3>
+
+        <div class="filter-group">
+          <h4 class="filter-group__label">Linha</h4>
+          <label class="filter-option"><input type="radio" name="linha" value="" checked /> Todas</label>
+          <label class="filter-option"><input type="radio" name="linha" value="aves" /> Aves</label>
+          <label class="filter-option"><input type="radio" name="linha" value="leite" /> Leite</label>
+          <label class="filter-option"><input type="radio" name="linha" value="pet" /> Pet</label>
+        </div>
+
+        <div class="filter-group">
+          <h4 class="filter-group__label">Animal</h4>
+          <label class="filter-option"><input type="checkbox" data-tag="caes" /> Cães</label>
+          <label class="filter-option"><input type="checkbox" data-tag="gatos" /> Gatos</label>
+          <label class="filter-option"><input type="checkbox" data-tag="aves" /> Aves</label>
+          <label class="filter-option"><input type="checkbox" data-tag="bovinos" /> Bovinos</label>
+        </div>
+
+        <div class="filter-group">
+          <h4 class="filter-group__label">Pesquisar</h4>
+          <input type="text" id="search" class="filter-search" placeholder="Nome do produto..." />
+        </div>
+      </aside>
+
+      <!-- Grid de produtos -->
+      <div class="products-grid" id="productsGrid">
+
+        <!-- ── AVES ─────────────────────────────────────────────────── -->
+
+        <div class="product-card" data-linha="aves" data-tags="aves">
+          <div class="product-card__img-wrap">
+            <img src="assets/img/nucleo_minerais_aves.png" alt="Núcleo Minerais Aves" />
+          </div>
+          <div class="product-card__body">
+            <span class="product-card__linha aves">Aves</span>
+            <h3 class="product-card__name">Núcleo Minerais Aves</h3>
+            <p class="product-card__desc">Núcleo vitamínico-mineral para formulação de rações para aves.</p>
+            <a href="https://wa.me/5500000000000?text=Olá! Tenho interesse no produto: Núcleo Minerais Aves" class="btn btn--outline btn--sm" target="_blank">Solicitar pedido</a>
+          </div>
+        </div>
+
+        <div class="product-card" data-linha="aves" data-tags="aves">
+          <div class="product-card__img-wrap">
+            <img src="assets/img/linha_aves_profissional.png" alt="Linha Aves Profissional" />
+          </div>
+          <div class="product-card__body">
+            <span class="product-card__linha aves">Aves</span>
+            <h3 class="product-card__name">Linha Aves Profissional</h3>
+            <p class="product-card__desc">Ração completa para aves de produção em todas as fases. 20 kg.</p>
+            <a href="https://wa.me/5500000000000?text=Olá! Tenho interesse no produto: Linha Aves Profissional" class="btn btn--outline btn--sm" target="_blank">Solicitar pedido</a>
+          </div>
+        </div>
+
+        <div class="product-card" data-linha="aves" data-tags="aves">
+          <div class="product-card__img-wrap">
+            <img src="assets/img/aves_da_fazenda.png" alt="Aves da Fazenda" />
+          </div>
+          <div class="product-card__body">
+            <span class="product-card__linha aves">Aves</span>
+            <h3 class="product-card__name">Aves da Fazenda</h3>
+            <p class="product-card__desc">Ração para aves de quintal e fazenda. 20 kg.</p>
+            <a href="https://wa.me/5500000000000?text=Olá! Tenho interesse no produto: Aves da Fazenda" class="btn btn--outline btn--sm" target="_blank">Solicitar pedido</a>
+          </div>
+        </div>
+
+        <div class="product-card" data-linha="aves" data-tags="aves">
+          <div class="product-card__img-wrap">
+            <img src="assets/img/linha_concentrado_aves.png" alt="Linha Concentrado Aves" />
+          </div>
+          <div class="product-card__body">
+            <span class="product-card__linha aves">Aves</span>
+            <h3 class="product-card__name">Linha Concentrado Aves</h3>
+            <p class="product-card__desc">Concentrado proteico para aves em fase de crescimento e engorda. 20 kg.</p>
+            <a href="https://wa.me/5500000000000?text=Olá! Tenho interesse no produto: Linha Concentrado Aves" class="btn btn--outline btn--sm" target="_blank">Solicitar pedido</a>
+          </div>
+        </div>
+
+        <div class="product-card" data-linha="aves" data-tags="aves">
+          <div class="product-card__img-wrap">
+            <img src="assets/img/ct_gloria_frango_cres_eng.png" alt="CT Glória Frango Cresc/Eng" />
+          </div>
+          <div class="product-card__body">
+            <span class="product-card__linha aves">Aves</span>
+            <h3 class="product-card__name">CT Glória Frango Cresc/Eng</h3>
+            <p class="product-card__desc">Concentrado para frangos nas fases de crescimento e engorda. 20 kg.</p>
+            <a href="https://wa.me/5500000000000?text=Olá! Tenho interesse no produto: CT Glória Frango Cresc/Eng" class="btn btn--outline btn--sm" target="_blank">Solicitar pedido</a>
+          </div>
+        </div>
+
+        <div class="product-card" data-linha="aves" data-tags="aves">
+          <div class="product-card__img-wrap">
+            <img src="assets/img/ct_gloria_aves_postura.png" alt="CT Glória Aves Postura" />
+          </div>
+          <div class="product-card__body">
+            <span class="product-card__linha aves">Aves</span>
+            <h3 class="product-card__name">CT Glória Aves Postura</h3>
+            <p class="product-card__desc">Concentrado para aves em fase de postura. 20 kg.</p>
+            <a href="https://wa.me/5500000000000?text=Olá! Tenho interesse no produto: CT Glória Aves Postura" class="btn btn--outline btn--sm" target="_blank">Solicitar pedido</a>
+          </div>
+        </div>
+
+        <!-- ── LEITE ────────────────────────────────────────────────── -->
+
+        <div class="product-card" data-linha="leite" data-tags="bovinos">
+          <div class="product-card__img-wrap">
+            <img src="assets/img/lacmax.png" alt="Lacmax" />
+          </div>
+          <div class="product-card__body">
+            <span class="product-card__linha leite">Leite</span>
+            <h3 class="product-card__name">Lacmax</h3>
+            <p class="product-card__desc">Para vacas de alto potencial leiteiro (>6 kg/dia). 40 kg.</p>
+            <a href="https://wa.me/5500000000000?text=Olá! Tenho interesse no produto: Lacmax" class="btn btn--outline btn--sm" target="_blank">Solicitar pedido</a>
+          </div>
+        </div>
+
+        <div class="product-card" data-linha="leite" data-tags="bovinos">
+          <div class="product-card__img-wrap">
+            <img src="assets/img/lacmax_torneio_leiteiro.png" alt="Lacmax Torneio Leiteiro" />
+          </div>
+          <div class="product-card__body">
+            <span class="product-card__linha leite">Leite</span>
+            <h3 class="product-card__name">Lacmax Torneio Leiteiro</h3>
+            <p class="product-card__desc">Para vacas em competições de alto potencial leiteiro. 40 kg.</p>
+            <a href="https://wa.me/5500000000000?text=Olá! Tenho interesse no produto: Lacmax Torneio Leiteiro" class="btn btn--outline btn--sm" target="_blank">Solicitar pedido</a>
+          </div>
+        </div>
+
+        <div class="product-card" data-linha="leite" data-tags="bovinos">
+          <div class="product-card__img-wrap">
+            <img src="assets/img/lacttus_energia_23.png" alt="Lacttus Energia 23%" />
+          </div>
+          <div class="product-card__body">
+            <span class="product-card__linha leite">Leite</span>
+            <h3 class="product-card__name">Lacttus Energia 23%</h3>
+            <p class="product-card__desc">Alta energia para vacas leiteiras de médio a alto potencial. 40 kg.</p>
+            <a href="https://wa.me/5500000000000?text=Olá! Tenho interesse no produto: Lacttus Energia 23%" class="btn btn--outline btn--sm" target="_blank">Solicitar pedido</a>
+          </div>
+        </div>
+
+        <div class="product-card" data-linha="leite" data-tags="bovinos">
+          <div class="product-card__img-wrap">
+            <img src="assets/img/lacttus_energia_23_tamp_lev.png" alt="Lacttus Energia 23% Tamp Lev" />
+          </div>
+          <div class="product-card__body">
+            <span class="product-card__linha leite">Leite</span>
+            <h3 class="product-card__name">Lacttus Energia 23% Tamp Lev</h3>
+            <p class="product-card__desc">Com tamponante e levedura para melhor digestibilidade. 40 kg.</p>
+            <a href="https://wa.me/5500000000000?text=Olá! Tenho interesse no produto: Lacttus Energia 23% Tamp Lev" class="btn btn--outline btn--sm" target="_blank">Solicitar pedido</a>
+          </div>
+        </div>
+
+        <div class="product-card" data-linha="leite" data-tags="bovinos">
+          <div class="product-card__img-wrap">
+            <img src="assets/img/gloria_lac.png" alt="Glória Lac" />
+          </div>
+          <div class="product-card__body">
+            <span class="product-card__linha leite">Leite</span>
+            <h3 class="product-card__name">Glória Lac</h3>
+            <p class="product-card__desc">Para vacas de médio a baixo potencial, pastagem seca. 40 kg.</p>
+            <a href="https://wa.me/5500000000000?text=Olá! Tenho interesse no produto: Glória Lac" class="btn btn--outline btn--sm" target="_blank">Solicitar pedido</a>
+          </div>
+        </div>
+
+        <div class="product-card" data-linha="leite" data-tags="bovinos">
+          <div class="product-card__img-wrap">
+            <img src="assets/img/turbolac_rotacionada_18.png" alt="Turbolac Rotacionada 18%" />
+          </div>
+          <div class="product-card__body">
+            <span class="product-card__linha leite">Leite</span>
+            <h3 class="product-card__name">Turbolac Rotacionada 18%</h3>
+            <p class="product-card__desc">Indicada para sistema de piquete rotacionado. 40 kg.</p>
+            <a href="https://wa.me/5500000000000?text=Olá! Tenho interesse no produto: Turbolac Rotacionada 18%" class="btn btn--outline btn--sm" target="_blank">Solicitar pedido</a>
+          </div>
+        </div>
+
+        <div class="product-card" data-linha="leite" data-tags="bovinos">
+          <div class="product-card__img-wrap">
+            <img src="assets/img/turbolac_rotacionada_tamp.png" alt="Turbolac Rotacionada Tamp" />
+          </div>
+          <div class="product-card__body">
+            <span class="product-card__linha leite">Leite</span>
+            <h3 class="product-card__name">Turbolac Rotacionada Tamp</h3>
+            <p class="product-card__desc">Com tamponante para sistemas rotacionados intensivos. 40 kg.</p>
+            <a href="https://wa.me/5500000000000?text=Olá! Tenho interesse no produto: Turbolac Rotacionada Tamp" class="btn btn--outline btn--sm" target="_blank">Solicitar pedido</a>
+          </div>
+        </div>
+
+        <div class="product-card" data-linha="leite" data-tags="bovinos">
+          <div class="product-card__img-wrap">
+            <img src="assets/img/sinleite.png" alt="Sinleite" />
+          </div>
+          <div class="product-card__body">
+            <span class="product-card__linha leite">Leite</span>
+            <h3 class="product-card__name">Sinleite</h3>
+            <p class="product-card__desc">Linha tradicional milho+soja para bovinos leiteiros em lactação. 40 kg.</p>
+            <a href="https://wa.me/5500000000000?text=Olá! Tenho interesse no produto: Sinleite" class="btn btn--outline btn--sm" target="_blank">Solicitar pedido</a>
+          </div>
+        </div>
+
+        <div class="product-card" data-linha="leite" data-tags="bovinos">
+          <div class="product-card__img-wrap">
+            <img src="assets/img/gloria_pre_parto_24.png" alt="Glória Pré-Parto 24%" />
+          </div>
+          <div class="product-card__body">
+            <span class="product-card__linha leite">Leite</span>
+            <h3 class="product-card__name">Glória Pré-Parto 24%</h3>
+            <p class="product-card__desc">Ideal a partir de 60 dias antes do parto. 2 kg/animal/dia. 40 kg.</p>
+            <a href="https://wa.me/5500000000000?text=Olá! Tenho interesse no produto: Glória Pré-Parto 24%" class="btn btn--outline btn--sm" target="_blank">Solicitar pedido</a>
+          </div>
+        </div>
+
+        <div class="product-card" data-linha="leite" data-tags="bovinos">
+          <div class="product-card__img-wrap">
+            <img src="assets/img/gloria_novilhas_18.png" alt="Glória Novilhas 18%" />
+          </div>
+          <div class="product-card__body">
+            <span class="product-card__linha leite">Leite</span>
+            <h3 class="product-card__name">Glória Novilhas 18%</h3>
+            <p class="product-card__desc">Desenvolvida para novilhas leiteiras em recria. 40 kg.</p>
+            <a href="https://wa.me/5500000000000?text=Olá! Tenho interesse no produto: Glória Novilhas 18%" class="btn btn--outline btn--sm" target="_blank">Solicitar pedido</a>
+          </div>
+        </div>
+
+        <div class="product-card" data-linha="leite" data-tags="bovinos">
+          <div class="product-card__img-wrap">
+            <img src="assets/img/nucleos_bovinos_lactacao.png" alt="Núcleos Bovinos Lactação" />
+          </div>
+          <div class="product-card__body">
+            <span class="product-card__linha leite">Leite</span>
+            <h3 class="product-card__name">Núcleos Bovinos Lactação</h3>
+            <p class="product-card__desc">Núcleo mineral exclusivo para formulação de rações e concentrados para bovinos leiteiros.</p>
+            <a href="https://wa.me/5500000000000?text=Olá! Tenho interesse no produto: Núcleos Bovinos Lactação" class="btn btn--outline btn--sm" target="_blank">Solicitar pedido</a>
+          </div>
+        </div>
+
+        <div class="product-card" data-linha="leite" data-tags="bovinos">
+          <div class="product-card__img-wrap">
+            <img src="assets/img/gloriasfos_80_vitaminado.png" alt="Glóriafós 80 Vitaminado" />
+          </div>
+          <div class="product-card__body">
+            <span class="product-card__linha leite">Leite</span>
+            <h3 class="product-card__name">Glóriafós 80 Vitaminado</h3>
+            <p class="product-card__desc">Suplemento mineral de pronto uso para bovinos. 25 kg.</p>
+            <a href="https://wa.me/5500000000000?text=Olá! Tenho interesse no produto: Glóriafós 80 Vitaminado" class="btn btn--outline btn--sm" target="_blank">Solicitar pedido</a>
+          </div>
+        </div>
+
+        <!-- ── PET · BOCÃO ──────────────────────────────────────────── -->
+
+        <div class="product-card" data-linha="pet" data-tags="caes">
+          <div class="product-card__img-wrap">
+            <img src="assets/img/bocao_original.png" alt="Bocão Original" />
+          </div>
+          <div class="product-card__body">
+            <span class="product-card__linha pet">Pet</span>
+            <h3 class="product-card__name">Bocão Original</h3>
+            <p class="product-card__desc">Ração completa para cães adultos de todas as raças. 15 kg e 25 kg.</p>
+            <a href="https://wa.me/5500000000000?text=Olá! Tenho interesse no produto: Bocão Original" class="btn btn--outline btn--sm" target="_blank">Solicitar pedido</a>
+          </div>
+        </div>
+
+        <div class="product-card" data-linha="pet" data-tags="caes">
+          <div class="product-card__img-wrap">
+            <img src="assets/img/bocao_filhotes.png" alt="Bocão Filhotes" />
+          </div>
+          <div class="product-card__body">
+            <span class="product-card__linha pet">Pet</span>
+            <h3 class="product-card__name">Bocão Filhotes</h3>
+            <p class="product-card__desc">Ração completa para cães filhotes. 7 kg e 20 kg.</p>
+            <a href="https://wa.me/5500000000000?text=Olá! Tenho interesse no produto: Bocão Filhotes" class="btn btn--outline btn--sm" target="_blank">Solicitar pedido</a>
+          </div>
+        </div>
+
+        <div class="product-card" data-linha="pet" data-tags="gatos">
+          <div class="product-card__img-wrap">
+            <img src="assets/img/bocao_gatos.png" alt="Bocão Gatos" />
+          </div>
+          <div class="product-card__body">
+            <span class="product-card__linha pet">Pet</span>
+            <h3 class="product-card__name">Bocão Gatos</h3>
+            <p class="product-card__desc">Ração para gatos adultos de todas as raças. 25 kg.</p>
+            <a href="https://wa.me/5500000000000?text=Olá! Tenho interesse no produto: Bocão Gatos" class="btn btn--outline btn--sm" target="_blank">Solicitar pedido</a>
+          </div>
+        </div>
+
+        <div class="product-card" data-linha="pet" data-tags="caes">
+          <div class="product-card__img-wrap">
+            <img src="assets/img/bocao_premium_caes_adultos.png" alt="Bocão Premium Cães Adultos" />
+          </div>
+          <div class="product-card__body">
+            <span class="product-card__linha pet">Pet</span>
+            <h3 class="product-card__name">Bocão Premium Cães Adultos</h3>
+            <p class="product-card__desc">Premium sem corantes para cães adultos. 15 kg e 25 kg.</p>
+            <a href="https://wa.me/5500000000000?text=Olá! Tenho interesse no produto: Bocão Premium Cães Adultos" class="btn btn--outline btn--sm" target="_blank">Solicitar pedido</a>
+          </div>
+        </div>
+
+        <div class="product-card" data-linha="pet" data-tags="caes">
+          <div class="product-card__img-wrap">
+            <img src="assets/img/bocao_premium_caes_filhotes.png" alt="Bocão Premium Cães Filhotes" />
+          </div>
+          <div class="product-card__body">
+            <span class="product-card__linha pet">Pet</span>
+            <h3 class="product-card__name">Bocão Premium Cães Filhotes</h3>
+            <p class="product-card__desc">Premium para filhotes de todas as raças. 10,1 kg e 20 kg.</p>
+            <a href="https://wa.me/5500000000000?text=Olá! Tenho interesse no produto: Bocão Premium Cães Filhotes" class="btn btn--outline btn--sm" target="_blank">Solicitar pedido</a>
+          </div>
+        </div>
+
+        <div class="product-card" data-linha="pet" data-tags="caes">
+          <div class="product-card__img-wrap">
+            <img src="assets/img/bocao_premium_racas_pequenas.png" alt="Bocão Premium Raças Pequenas" />
+          </div>
+          <div class="product-card__body">
+            <span class="product-card__linha pet">Pet</span>
+            <h3 class="product-card__name">Bocão Premium Raças Pequenas</h3>
+            <p class="product-card__desc">Granulado menor para cães adultos de porte pequeno. 10,1 kg.</p>
+            <a href="https://wa.me/5500000000000?text=Olá! Tenho interesse no produto: Bocão Premium Raças Pequenas" class="btn btn--outline btn--sm" target="_blank">Solicitar pedido</a>
+          </div>
+        </div>
+
+        <div class="product-card" data-linha="pet" data-tags="gatos">
+          <div class="product-card__img-wrap">
+            <img src="assets/img/bocao_premium_gatos.png" alt="Bocão Premium Gatos" />
+          </div>
+          <div class="product-card__body">
+            <span class="product-card__linha pet">Pet</span>
+            <h3 class="product-card__name">Bocão Premium Gatos</h3>
+            <p class="product-card__desc">Premium para gatos adultos. 10,1 kg e 20 kg.</p>
+            <a href="https://wa.me/5500000000000?text=Olá! Tenho interesse no produto: Bocão Premium Gatos" class="btn btn--outline btn--sm" target="_blank">Solicitar pedido</a>
+          </div>
+        </div>
+
+        <div class="product-card" data-linha="pet" data-tags="gatos">
+          <div class="product-card__img-wrap">
+            <img src="assets/img/bocao_premium_gatos_castrados.png" alt="Bocão Premium Gatos Castrados" />
+          </div>
+          <div class="product-card__body">
+            <span class="product-card__linha pet">Pet</span>
+            <h3 class="product-card__name">Bocão Premium Gatos Castrados</h3>
+            <p class="product-card__desc">Formulação específica para gatos castrados. 10,1 kg.</p>
+            <a href="https://wa.me/5500000000000?text=Olá! Tenho interesse no produto: Bocão Premium Gatos Castrados" class="btn btn--outline btn--sm" target="_blank">Solicitar pedido</a>
+          </div>
+        </div>
+
+        <!-- ── PET · PALATTO ────────────────────────────────────────── -->
+
+        <div class="product-card" data-linha="pet" data-tags="caes">
+          <div class="product-card__img-wrap">
+            <img src="assets/img/palatto_tradicional.png" alt="Palatto Tradicional" />
+          </div>
+          <div class="product-card__body">
+            <span class="product-card__linha pet">Pet</span>
+            <h3 class="product-card__name">Palatto Tradicional</h3>
+            <p class="product-card__desc">Perú e arroz. Cães adultos todas as raças. 15 kg.</p>
+            <a href="https://wa.me/5500000000000?text=Olá! Tenho interesse no produto: Palatto Tradicional" class="btn btn--outline btn--sm" target="_blank">Solicitar pedido</a>
+          </div>
+        </div>
+
+        <div class="product-card" data-linha="pet" data-tags="caes">
+          <div class="product-card__img-wrap">
+            <img src="assets/img/palatto_filhote.png" alt="Palatto Filhote" />
+          </div>
+          <div class="product-card__body">
+            <span class="product-card__linha pet">Pet</span>
+            <h3 class="product-card__name">Palatto Filhote</h3>
+            <p class="product-card__desc">Formulação completa para cães filhotes. 15 kg.</p>
+            <a href="https://wa.me/5500000000000?text=Olá! Tenho interesse no produto: Palatto Filhote" class="btn btn--outline btn--sm" target="_blank">Solicitar pedido</a>
+          </div>
+        </div>
+
+        <div class="product-card" data-linha="pet" data-tags="caes">
+          <div class="product-card__img-wrap">
+            <img src="assets/img/palatto_racas_pequenas_mini.png" alt="Palatto Raças Pequenas e Mini" />
+          </div>
+          <div class="product-card__body">
+            <span class="product-card__linha pet">Pet</span>
+            <h3 class="product-card__name">Palatto Raças Pequenas e Mini</h3>
+            <p class="product-card__desc">Frango e arroz. Cães adultos de pequeno porte. 15 kg.</p>
+            <a href="https://wa.me/5500000000000?text=Olá! Tenho interesse no produto: Palatto Raças Pequenas e Mini" class="btn btn--outline btn--sm" target="_blank">Solicitar pedido</a>
+          </div>
+        </div>
+
+        <div class="product-card" data-linha="pet" data-tags="caes">
+          <div class="product-card__img-wrap">
+            <img src="assets/img/palatto_sennior.png" alt="Palatto Sennior" />
+          </div>
+          <div class="product-card__body">
+            <span class="product-card__linha pet">Pet</span>
+            <h3 class="product-card__name">Palatto Sennior</h3>
+            <p class="product-card__desc">Para cães a partir de 7 anos. Frango e arroz. 15 kg.</p>
+            <a href="https://wa.me/5500000000000?text=Olá! Tenho interesse no produto: Palatto Sennior" class="btn btn--outline btn--sm" target="_blank">Solicitar pedido</a>
+          </div>
+        </div>
+
+        <div class="product-card" data-linha="pet" data-tags="caes">
+          <div class="product-card__img-wrap">
+            <img src="assets/img/palatto_full_power.png" alt="Palatto Full Power" />
+          </div>
+          <div class="product-card__body">
+            <span class="product-card__linha pet">Pet</span>
+            <h3 class="product-card__name">Palatto Full Power</h3>
+            <p class="product-card__desc">Para cães adultos ativos, esportivos e de trabalho. 15 kg.</p>
+            <a href="https://wa.me/5500000000000?text=Olá! Tenho interesse no produto: Palatto Full Power" class="btn btn--outline btn--sm" target="_blank">Solicitar pedido</a>
+          </div>
+        </div>
+
+        <div class="product-card" data-linha="pet" data-tags="caes">
+          <div class="product-card__img-wrap">
+            <img src="assets/img/palatto_full_power_filhotes.png" alt="Palatto Full Power Filhotes" />
+          </div>
+          <div class="product-card__body">
+            <span class="product-card__linha pet">Pet</span>
+            <h3 class="product-card__name">Palatto Full Power Filhotes</h3>
+            <p class="product-card__desc">Para filhotes de cães ativos. Frango e arroz. 15 kg.</p>
+            <a href="https://wa.me/5500000000000?text=Olá! Tenho interesse no produto: Palatto Full Power Filhotes" class="btn btn--outline btn--sm" target="_blank">Solicitar pedido</a>
+          </div>
+        </div>
+
+        <div class="product-card" data-linha="pet" data-tags="gatos">
+          <div class="product-card__img-wrap">
+            <img src="assets/img/palatto_gatos_adultos.png" alt="Palatto Gatos Adultos" />
+          </div>
+          <div class="product-card__body">
+            <span class="product-card__linha pet">Pet</span>
+            <h3 class="product-card__name">Palatto Gatos Adultos</h3>
+            <p class="product-card__desc">Ração completa para gatos adultos. Salmão e arroz. 10,1 kg.</p>
+            <a href="https://wa.me/5500000000000?text=Olá! Tenho interesse no produto: Palatto Gatos Adultos" class="btn btn--outline btn--sm" target="_blank">Solicitar pedido</a>
+          </div>
+        </div>
+
+        <div class="product-card" data-linha="pet" data-tags="gatos">
+          <div class="product-card__img-wrap">
+            <img src="assets/img/palatto_gato_castrado.png" alt="Palatto Gato Castrado" />
+          </div>
+          <div class="product-card__body">
+            <span class="product-card__linha pet">Pet</span>
+            <h3 class="product-card__name">Palatto Gato Castrado</h3>
+            <p class="product-card__desc">Específica para gatos castrados. 10,1 kg.</p>
+            <a href="https://wa.me/5500000000000?text=Olá! Tenho interesse no produto: Palatto Gato Castrado" class="btn btn--outline btn--sm" target="_blank">Solicitar pedido</a>
+          </div>
+        </div>
+
+        <div class="product-card" data-linha="pet" data-tags="gatos">
+          <div class="product-card__img-wrap">
+            <img src="assets/img/palatto_gatos_filhotes.png" alt="Palatto Gatos Filhotes" />
+          </div>
+          <div class="product-card__body">
+            <span class="product-card__linha pet">Pet</span>
+            <h3 class="product-card__name">Palatto Gatos Filhotes</h3>
+            <p class="product-card__desc">Para gatinhos filhotes de todas as raças. 10,1 kg.</p>
+            <a href="https://wa.me/5500000000000?text=Olá! Tenho interesse no produto: Palatto Gatos Filhotes" class="btn btn--outline btn--sm" target="_blank">Solicitar pedido</a>
+          </div>
+        </div>
+
+        <!-- ── PET · PALATTO SUPER PREMIUM ─────────────────────────── -->
+
+        <div class="product-card" data-linha="pet" data-tags="caes">
+          <div class="product-card__img-wrap">
+            <img src="assets/img/palatto_super_premium_adultos.png" alt="Palatto Natural Essence Adultos" />
+          </div>
+          <div class="product-card__body">
+            <span class="product-card__linha pet">Pet · Super Premium</span>
+            <h3 class="product-card__name">Palatto Natural Essence AD</h3>
+            <p class="product-card__desc">Linha Natural Essence para cães adultos todas as raças. 15 kg.</p>
+            <a href="https://wa.me/5500000000000?text=Olá! Tenho interesse no produto: Palatto Natural Essence AD" class="btn btn--outline btn--sm" target="_blank">Solicitar pedido</a>
+          </div>
+        </div>
+
+        <div class="product-card" data-linha="pet" data-tags="caes">
+          <div class="product-card__img-wrap">
+            <img src="assets/img/palatto_super_premium_racas_pequenas.png" alt="Palatto Natural Essence Raças Peq" />
+          </div>
+          <div class="product-card__body">
+            <span class="product-card__linha pet">Pet · Super Premium</span>
+            <h3 class="product-card__name">Palatto Natural Essence Raças Peq</h3>
+            <p class="product-card__desc">Natural Essence para cães adultos de pequeno porte. 10,1 kg.</p>
+            <a href="https://wa.me/5500000000000?text=Olá! Tenho interesse no produto: Palatto Natural Essence Raças Pequenas" class="btn btn--outline btn--sm" target="_blank">Solicitar pedido</a>
+          </div>
+        </div>
+
+        <div class="product-card" data-linha="pet" data-tags="caes">
+          <div class="product-card__img-wrap">
+            <img src="assets/img/palatto_super_premium_filhotes.png" alt="Palatto Natural Essence Filhotes" />
+          </div>
+          <div class="product-card__body">
+            <span class="product-card__linha pet">Pet · Super Premium</span>
+            <h3 class="product-card__name">Palatto Natural Essence Filhotes</h3>
+            <p class="product-card__desc">Natural Essence para cães filhotes. 10,1 kg.</p>
+            <a href="https://wa.me/5500000000000?text=Olá! Tenho interesse no produto: Palatto Natural Essence Filhotes" class="btn btn--outline btn--sm" target="_blank">Solicitar pedido</a>
+          </div>
+        </div>
+
+      </div><!-- /products-grid -->
+    </div><!-- /products-page__inner -->
+  </section>
+
+  <!-- ══ FOOTER ════════════════════════════════════════════════════════════ -->
+  <footer class="footer">
+    <div class="container footer__inner">
+      <div class="footer__brand">
+        <span class="logo-text">Rações<strong>Glória</strong></span>
+        <p>Nutrição animal com ciência e cuidado. Indústria brasileira.</p>
+      </div>
+      <div class="footer__col">
+        <h5>Produtos</h5>
+        <a href="produtos.html?linha=aves">Linha Aves</a>
+        <a href="produtos.html?linha=leite">Linha Leite</a>
+        <a href="produtos.html?linha=pet">Linha Pet</a>
+      </div>
+      <div class="footer__col">
+        <h5>Empresa</h5>
+        <a href="index.html#sobre">Sobre nós</a>
+        <a href="index.html#contato">Contato</a>
+        <a href="#">Seja distribuidor</a>
+      </div>
+      <div class="footer__col">
+        <h5>Contato</h5>
+        <a href="tel:+5500000000">SAC: (00) 0000-0000</a>
+        <a href="mailto:contato@racoesgloria.com.br">contato@racoesgloria.com.br</a>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <div class="container">
+        <p>© 2026 Rações Glória. Todos os direitos reservados. Indústria Brasileira.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
